@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="az">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RIF Ofis Mebelleri — Mebel və xalça mağazası, Bakı</title>
+<meta name="description" content="RIF Ofis Mebelleri: mebel, xalça və interyer məhsulları. Google-da ★4.7 (37 rəy). WhatsApp-la sifariş.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f8f5ef;--card:#fff;--ink:#29251f;--muted:#6c625c;--brand:#8a5a32;--brand2:#c28b55;--line:#e9e1da;--r:20px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Manrope,system-ui,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+header{position:sticky;top:0;z-index:10;background:rgba(246,248,248,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:64px;gap:12px}
+.logo{font-weight:800;font-size:18px;display:flex;align-items:center;gap:10px;min-width:0}
+.logo span{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.logo i{width:34px;height:34px;flex:none;border-radius:10px;background:linear-gradient(135deg,var(--brand),var(--brand2));display:grid;place-items:center;color:#fff;font-style:normal}
+.lang{display:flex;gap:4px;background:#fff;border:1px solid var(--line);border-radius:99px;padding:3px}
+.lang button{border:0;background:none;font:600 13px Manrope;padding:6px 10px;border-radius:99px;cursor:pointer;color:var(--muted)}
+.lang button.on{background:var(--ink);color:#fff}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--brand);color:#fff;font-weight:700;padding:15px 24px;border-radius:14px;transition:.2s}
+.btn:hover{background:#0b5f58;transform:translateY(-1px)}
+.btn.ghost{background:#fff;color:var(--ink);border:1px solid var(--line)}
+.hero{padding:64px 0 48px;display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
+.badge{display:inline-flex;align-items:center;gap:8px;background:#fff;border:1px solid var(--line);padding:8px 14px;border-radius:99px;font-weight:600;font-size:14px}
+.badge b{color:#f59e0b}
+h1{font-size:clamp(34px,5vw,58px);line-height:1.05;letter-spacing:-.03em;margin:20px 0 18px}
+h1 em{font-style:normal;color:var(--brand)}
+.lead{font-size:18px;color:var(--muted);max-width:520px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.visual{aspect-ratio:4/5;border-radius:32px;background:radial-gradient(circle at 30% 20%,#5eead4,transparent 55%),linear-gradient(160deg,#0f766e,#134e4a);position:relative;overflow:hidden}
+.visual svg{position:absolute;inset:0;margin:auto;width:55%;opacity:.95}
+.float{position:absolute;left:-18px;bottom:28px;background:#fff;border-radius:16px;padding:14px 18px;box-shadow:0 20px 40px rgba(13,27,30,.15);font-weight:700}
+.float small{display:block;color:var(--muted);font-weight:500}
+section{padding:56px 0}
+h2{font-size:clamp(26px,3.4vw,38px);letter-spacing:-.02em;margin-bottom:28px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:26px}
+.card h3{font-size:19px;margin:14px 0 6px}
+.card p{color:var(--muted);font-size:15px}
+.ico{width:44px;height:44px;border-radius:12px;background:#ccfbf1;display:grid;place-items:center;font-size:22px}
+.price{margin-top:14px;font-weight:700;color:var(--brand);font-size:14px}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.stat{background:var(--ink);color:#fff;border-radius:var(--r);padding:26px}
+.stat b{font-size:34px;display:block;letter-spacing:-.02em}
+.stat span{color:#9fb4b8;font-size:14px}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.steps .card:before{counter-increment:s;content:"0" counter(s);font-weight:800;color:var(--brand2);font-size:28px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.map{border-radius:var(--r);overflow:hidden;border:1px solid var(--line);min-height:320px}
+.map iframe{width:100%;height:100%;min-height:320px;border:0}
+footer{padding:28px 0 100px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+.wa{position:fixed;right:18px;bottom:18px;z-index:20;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 30px rgba(37,211,102,.45)}
+.demo{background:#fef3c7;color:#92400e;text-align:center;font-size:13px;font-weight:600;padding:8px 16px}
+[data-ru]{display:none}
+body.ru [data-az]{display:none}
+body.ru [data-ru]{display:revert}
+@media(max-width:860px){.hero,.contact{grid-template-columns:1fr}.grid,.steps{grid-template-columns:1fr}.why{grid-template-columns:1fr 1fr}.visual{aspect-ratio:16/11}.float{left:16px}.nav .btn{display:none}}
+</style>
+</head>
+<body>
+<div class="demo"><span data-az>Demo layihə — RIF Ofis Mebelleri-in rəsmi saytı deyil</span><span data-ru>Демо-проект — не официальный сайт RIF Ofis Mebelleri</span></div>
+<header><div class="wrap nav">
+  <a class="logo" href="#"><i>⌂</i><span>RIF Ofis Mebelleri</span></a>
+  <div style="display:flex;gap:10px;align-items:center">
+    <div class="lang"><button class="on" onclick="setL('az',this)">AZ</button><button onclick="setL('ru',this)">RU</button></div>
+    <a class="btn" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>WhatsApp əlaqə</span><span data-ru>Связаться</span></a>
+  </div>
+</div></header>
+
+<main class="wrap">
+<div class="hero">
+  <div>
+    <div class="badge"><b>★ 4.7</b> · <span data-az>Google-da 37 rəy</span><span data-ru>37 отзывов в Google</span></div>
+    <h1><span data-az>Evə yaraşan <em>rahatlıq</em> və zövqlü seçim</span><span data-ru>Уют и стильный выбор для <em>вашего дома</em></span></h1>
+    <p class="lead"><span data-az>RIF Ofis Mebelleri — mebel və interyer seçimləri. Modellər və sifariş barədə WhatsApp-la soruşun.</span><span data-ru>RIF Ofis Mebelleri — мебель и решения для интерьера. Узнайте о моделях и заказе в WhatsApp.</span></p>
+    <div class="cta">
+      <a class="btn" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>WhatsApp-la əlaqə saxlayın</span><span data-ru>Связаться в WhatsApp</span> →</a>
+      <a class="btn ghost" href="tel:+994508882444">+994 50 888 24 44</a>
+    </div>
+  </div>
+  <div class="visual">
+    <svg viewBox="0 0 100 110" fill="none" stroke="#fff" stroke-width="3" stroke-linejoin="round"><path d="M20 50V38a8 8 0 0 1 8-8h44a8 8 0 0 1 8 8v12"/><path d="M14 52a8 8 0 0 1 16 0v8h40v-8a8 8 0 0 1 16 0v22H14z"/><path d="M22 74v8M78 74v8"/></svg>
+    <div class="float">★ 4.7 / 5<small><span data-az>37 Google rəyi</span><span data-ru>37 отзывов</span></small></div>
+  </div>
+</div>
+
+<section id="services"><h2><span data-az>Kataloq</span><span data-ru>Каталог</span></h2><div class="grid"><div class="card"><div class="ico">🛋️</div><h3><span data-az>Qonaq otağı</span><span data-ru>Гостиная</span></h3><p><span data-az>Divan, kreslo və qonaq otağı dəstləri.</span><span data-ru>Диваны, кресла и мебельные комплекты.</span></p><div class="price"><span data-az>Qiymət: konsultasiyada</span><span data-ru>Цена: после осмотра</span></div><a class="btn" style="margin-top:14px;padding:10px 14px" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>Sifariş et</span><span data-ru>Заказать</span> →</a></div><div class="card"><div class="ico">🛏️</div><h3><span data-az>Yataq otağı</span><span data-ru>Спальня</span></h3><p><span data-az>Yataq və dolab modelləri.</span><span data-ru>Кровати и шкафы.</span></p><div class="price"><span data-az>Qiymət: konsultasiyada</span><span data-ru>Цена: после осмотра</span></div><a class="btn" style="margin-top:14px;padding:10px 14px" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>Sifariş et</span><span data-ru>Заказать</span> →</a></div><div class="card"><div class="ico">🍽️</div><h3><span data-az>Mətbəx mebeli</span><span data-ru>Кухонная мебель</span></h3><p><span data-az>Mətbəx üçün praktik həllər.</span><span data-ru>Практичные решения для кухни.</span></p><div class="price"><span data-az>Qiymət: konsultasiyada</span><span data-ru>Цена: после осмотра</span></div><a class="btn" style="margin-top:14px;padding:10px 14px" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>Sifariş et</span><span data-ru>Заказать</span> →</a></div><div class="card"><div class="ico">🪑</div><h3><span data-az>Ofis mebeli</span><span data-ru>Офисная мебель</span></h3><p><span data-az>İş məkanı üçün masa və oturacaqlar.</span><span data-ru>Столы и кресла для работы.</span></p><div class="price"><span data-az>Qiymət: konsultasiyada</span><span data-ru>Цена: после осмотра</span></div><a class="btn" style="margin-top:14px;padding:10px 14px" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>Sifariş et</span><span data-ru>Заказать</span> →</a></div><div class="card"><div class="ico">🧶</div><h3><span data-az>Xalçalar</span><span data-ru>Ковры</span></h3><p><span data-az>Müxtəlif interyerlərə uyğun xalçalar.</span><span data-ru>Ковры для разных интерьеров.</span></p><div class="price"><span data-az>Qiymət: konsultasiyada</span><span data-ru>Цена: после осмотра</span></div><a class="btn" style="margin-top:14px;padding:10px 14px" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>Sifariş et</span><span data-ru>Заказать</span> →</a></div><div class="card"><div class="ico">🪞</div><h3><span data-az>Dekor və aksesuarlar</span><span data-ru>Декор и аксессуары</span></h3><p><span data-az>Məkanı tamamlayan detallar.</span><span data-ru>Детали для интерьера.</span></p><div class="price"><span data-az>Qiymət: konsultasiyada</span><span data-ru>Цена: после осмотра</span></div><a class="btn" style="margin-top:14px;padding:10px 14px" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>Sifariş et</span><span data-ru>Заказать</span> →</a></div></div></section>
+
+<section>
+  <div class="why">
+    <div class="stat"><b>★ 4.7</b><span data-az>Google reytinqi</span><span data-ru>рейтинг в Google</span></div>
+    <div class="stat"><b>37+</b><span data-az>Google rəyi</span><span data-ru>отзывов</span></div>
+    <div class="stat"><b>AZ / RU</b><span data-az>WhatsApp-la sifariş</span><span data-ru>заказ в WhatsApp</span></div>
+    <div class="stat"><b>WhatsApp</b><span data-az>WhatsApp əlaqəsi</span><span data-ru>связь в WhatsApp</span></div>
+  </div>
+</section>
+
+<section>
+  <h2><span data-az>Sifariş necə verilir</span><span data-ru>Как оформить заказ</span></h2>
+  <div class="steps">
+    <div class="card"><h3><span data-az>WhatsApp-a yazın</span><span data-ru>Напишите в WhatsApp</span></h3><p><span data-az>Problemi qısa təsvir edin və ya şəkil göndərin.</span><span data-ru>Кратко опишите проблему или пришлите фото.</span></p></div>
+    <div class="card"><h3><span data-az>Məhsulu seçin</span><span data-ru>Выберите товар</span></h3><p><span data-az>Kataloqdan bəyəndiyiniz kateqoriyanı seçin.</span><span data-ru>Выберите подходящую категорию каталога.</span></p></div>
+    <div class="card"><h3><span data-az>Çatdırılmanı razılaşdırın</span><span data-ru>Согласуйте доставку</span></h3><p><span data-az>Mövcudluğu, qiyməti və çatdırılmanı WhatsApp-da soruşun.</span><span data-ru>Уточните наличие, цену и доставку в WhatsApp.</span></p></div>
+  </div>
+</section>
+
+<section id="contact">
+  <h2><span data-az>Əlaqə</span><span data-ru>Контакты</span></h2>
+  <div class="contact">
+    <div class="card">
+      <h3>RIF Ofis Mebelleri</h3>
+      <p style="margin:10px 0 20px">📍 30 Eldar Babayev, Bakı<br>📞 <a href="tel:+994508882444">+994 50 888 24 44</a></p>
+      <a class="btn" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank"><span data-az>WhatsApp-la əlaqə saxlayın</span><span data-ru>Связаться в WhatsApp</span></a>
+    </div>
+    <div class="map"><iframe loading="lazy" src="https://maps.google.com/maps?q=RIF%20Ofis%20Mebelleri%2C%2030%20Eldar%20Babayev%2C%20Bak%C4%B1&output=embed"></iframe></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© RIF Ofis Mebelleri · Bakı</div></footer>
+<a class="wa" href="https://wa.me/994508882444?text=Salam%21%20Saytdan%20yaz%C4%B1ram%2C%20m%C9%99hsullar%20v%C9%99%20sifari%C5%9F%20bar%C9%99d%C9%99%20m%C9%99lumat%20almaq%20ist%C9%99yir%C9%99m." target="_blank" aria-label="WhatsApp"><svg width="30" height="30" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.3 14.2c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .2-3.3-.7-2.8-1.1-4.5-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .6l-.4.6-.3.4c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.3 2.4 1.5.3.1.5.1.7-.1l1-1.2c.2-.3.4-.2.7-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.4z"/></svg></a>
+<script>
+function setL(l,b){document.body.classList.toggle('ru',l==='ru');document.documentElement.lang=l;document.querySelectorAll('.lang button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}
+</script>
+</body>
+</html>
