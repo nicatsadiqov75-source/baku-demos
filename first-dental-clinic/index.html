@@ -263,7 +263,8 @@ I just wanted to share his information with everyone.</q><small>Google · bir il
 <script>
 function setL(l,b){document.body.classList.toggle('ru',l==='ru');document.documentElement.lang=l;document.querySelectorAll('.lang button').forEach(x=>x.classList.remove('on'));b.classList.add('on')}
 const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('on');io.unobserve(e.target)}}),{threshold:.12});
-document.querySelectorAll('.rv-in').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';io.observe(el)});
+document.querySelectorAll('.rv-in').forEach((el,i)=>{el.style.transitionDelay=(i%3)*90+'ms';if(el.closest('.hero')){requestAnimationFrame(()=>el.classList.add('on'))}else{io.observe(el)}});
+setTimeout(()=>document.querySelectorAll('.rv-in').forEach(el=>el.classList.add('on')),2500);
 </script>
 </body>
 </html>
